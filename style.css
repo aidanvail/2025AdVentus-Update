@@ -556,8 +556,6 @@ a:focus,
   .footer-contact {
     margin-top: var(--spacing-lg);
   }
-}
-
   nav ul {
     flex-direction: column;
     align-items: center;
