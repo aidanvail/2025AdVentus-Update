@@ -68,7 +68,7 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--spacing-lg);
+  padding: 0 var(--spacing-xl);
   box-sizing: border-box;
 }
 
@@ -81,16 +81,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: 3rem; }
-h2 { font-size: 2.5rem; }
-h3 { font-size: 2rem; }
-h4 { font-size: 1.75rem; }
-h5 { font-size: 1.5rem; }
-h6 { font-size: 1.25rem; }
+h2 { font-size: 2.25rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1.1rem; }
 
 p {
   margin: 0 0 var(--spacing-md);
   font-size: 1.1rem;
   color: var(--charcoal);
+}
+
+ul {
+  padding-left: var(--spacing-lg);
+  margin: 0 0 var(--spacing-md);
+}
+
+li {
+  margin-bottom: var(--spacing-sm);
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 a {
@@ -237,6 +250,13 @@ nav a:hover {
 /* =============================
    MAIN SECTIONS
 ============================= */
+section {
+  padding: var(--spacing-xl) 0;
+}
+
+section + section {
+  margin-top: var(--spacing-xl);
+}
 /* =============================
    SERVICES SECTION
 ============================= */
@@ -467,6 +487,15 @@ a:focus,
 .footer-contact {
   text-align: center;
   font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-contact p {
+  margin: 0 0 var(--spacing-sm);
+}
+
+.footer-contact p:last-child {
+  margin-bottom: 0;
 }
 
 .site-footer a {
@@ -517,6 +546,10 @@ a:focus,
 
   .container {
     padding: 0 var(--spacing-md);
+  }
+
+  section {
+    padding: var(--spacing-lg) 0;
   }
 
   .hero h1 {
