@@ -18,19 +18,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const navMenu = document.getElementById("navMenu");
   if (navToggle && navMenu) {
     navToggle.addEventListener("click", () => {
-      navMenu.classList.toggle("open");
+      const open = navMenu.classList.toggle("open");
+      navToggle.setAttribute("aria-expanded", open);
     });
-  }
 
-  // --- Scroll Animations (AOS) ---
-  if (window.AOS) {
-    AOS.init({
-      duration: 700, // Animation duration in ms
-      once: true,    // Only animate once per element
-      offset: 60,    // Offset (px) from the original trigger point
-      easing: 'ease-out-cubic',
-      mirror: false, // Don't animate out while scrolling past
-      disable: window.innerWidth < 600 // Disable on very small screens for performance
+    navMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        if (navMenu.classList.contains("open")) {
+          navMenu.classList.remove("open");
+          navToggle.setAttribute("aria-expanded", "false");
+        }
+      });
     });
   }
 
