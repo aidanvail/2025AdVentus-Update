@@ -68,15 +68,15 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--spacing-lg);
+  padding: 0 var(--spacing-xl);
   box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2;
-  margin: 0 0 var(--spacing-md);
+  margin: var(--spacing-lg) 0 var(--spacing-md);
   color: var(--navy);
 }
 
@@ -90,6 +90,8 @@ h6 { font-size: 1.25rem; }
 p {
   margin: 0 0 var(--spacing-md);
   font-size: 1.1rem;
+  max-width: 700px;
+  line-height: 1.7;
   color: var(--charcoal);
 }
 
@@ -108,8 +110,11 @@ a:hover {
 ============================= */
 header {
   background-color: var(--navy);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   color: var(--white);
-  padding: 20px;
+  padding: var(--spacing-lg);
   text-align: center;
 }
 
@@ -204,8 +209,8 @@ nav a:hover {
   font-weight: 600;
   font-size: 1.1rem;
   letter-spacing: 0.5px;
-  transition: all var(--transition-normal);
-  box-shadow: var(--shadow-md);
+  transition: background var(--transition-normal), transform var(--transition-normal), box-shadow var(--transition-normal);
+  box-shadow: var(--shadow-sm);
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -223,9 +228,9 @@ nav a:hover {
   z-index: -1;
   transition: opacity var(--transition-normal);
 }
-
 .cta-btn:hover {
-  transform: translateY(-2px);
+
+  transform: translateY(-3px);
   box-shadow: var(--shadow-lg);
   color: var(--white);
 }
@@ -237,6 +242,14 @@ nav a:hover {
 /* =============================
    MAIN SECTIONS
 ============================= */
+section {
+  padding: var(--spacing-xl) 0;
+}
+
+.section-alt {
+  background-color: #f9f9f9;
+}
+
 /* =============================
    SERVICES SECTION
 ============================= */
@@ -251,7 +264,7 @@ nav a:hover {
   background: var(--white);
   padding: var(--spacing-lg);
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-sm);
   text-align: left;
   transition: all var(--transition-normal);
   position: relative;
@@ -325,7 +338,7 @@ nav a:hover {
   background: var(--white);
   padding: var(--spacing-lg);
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-sm);
   text-align: center;
   transition: all var(--transition-normal);
   position: relative;
@@ -467,6 +480,7 @@ a:focus,
 .footer-contact {
   text-align: center;
   font-size: 0.95rem;
+  color: var(--silver);
 }
 
 .site-footer a {
@@ -516,20 +530,19 @@ a:focus,
   }
 
   .container {
-    padding: 0 var(--spacing-md);
+    padding: 0 var(--spacing-lg);
   }
 
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero p {
-    font-size: 1.1rem;
-  }
+  .hero h1 { font-size: 2.5rem; }
+  .hero p { font-size: 1.1rem; }
 
   .cta-btn {
     padding: var(--spacing-md) var(--spacing-lg);
     font-size: 1rem;
+  }
+
+  section {
+    padding: var(--spacing-lg) 0;
   }
 
   .services-grid,
@@ -556,7 +569,6 @@ a:focus,
   .footer-contact {
     margin-top: var(--spacing-lg);
   }
-}
 
   nav ul {
     flex-direction: column;
