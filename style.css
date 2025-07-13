@@ -478,9 +478,9 @@ a:focus,
 
 .site-footer .container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: var(--spacing-lg);
 }
 
@@ -497,16 +497,16 @@ a:focus,
 
 .footer-links {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   gap: var(--spacing-md);
 }
 
 .footer-contact {
-  text-align: right;
+  text-align: center;
   font-size: 0.95rem;
   color: var(--silver);
-  margin-left: auto;
+  margin-left: 0;
 }
 
 .site-footer a {
@@ -544,7 +544,12 @@ a:focus,
 
 .socials a {
   margin: 0 var(--spacing-sm);
-  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--silver-light);
+  transition: color var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* =============================
@@ -567,11 +572,6 @@ a:focus,
     font-size: 1rem;
   }
 
-  .site-footer .container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
 
   section {
     padding: var(--spacing-lg) 0;
