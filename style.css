@@ -891,8 +891,10 @@ a:focus,
   z-index: 1;
 }
 
+
 .contact-form {
   position: relative;
+  z-index: 1;
 }
 
 .contact-form::before {
@@ -902,5 +904,6 @@ a:focus,
   background: rgba(0,0,0,0.5);
   pointer-events: none;
   border-radius: 8px;
+  z-index: -1;
 }
 
