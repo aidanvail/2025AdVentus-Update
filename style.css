@@ -757,3 +757,67 @@ a:focus,
   height: 40px;
   margin-bottom: 1rem;
 }
+
+.hero-banner {
+  background-image: url('/assets/images/15.png');
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+  position: relative;
+  color: white;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.companies-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.company-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.company-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.company-card .icon {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 12px;
+}
+
+.company-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.company-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
