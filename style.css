@@ -886,16 +886,21 @@ a:focus,
   color: #fff;
 }
 
-.contact-section::before {
+.contact-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-form {
+  position: relative;
+}
+
+.contact-form::before {
   content: '';
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.5);
   pointer-events: none;
-}
-
-.contact-section .container {
-  position: relative;
-  z-index: 1;
+  border-radius: 8px;
 }
 
