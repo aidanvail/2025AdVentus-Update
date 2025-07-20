@@ -875,3 +875,26 @@ a:focus,
   background: linear-gradient(to right, #f0f9ff, #e0f2ff);
 }
 
+/* =============================
+   CONTACT PAGE STYLES
+============================= */
+.contact-section {
+  background-image: url('/assets/images/contact-banner-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.contact-section .container {
+  position: relative;
+  z-index: 1;
+}
+
