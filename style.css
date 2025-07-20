@@ -762,22 +762,28 @@ a:focus,
   background-image: url('/assets/images/15.png');
   background-size: cover;
   background-position: center;
-  height: 280px;
-  position: relative;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   color: white;
 }
 
 .hero-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  width: 100%;
 }
 
 .hero-overlay h1 {
-  font-size: 2.2rem;
-  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  font-size: 1.1rem;
+  margin: 0;
 }
 
 .companies-section {
@@ -789,20 +795,22 @@ a:focus,
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .company-card {
-  background: #ffffff;
+  background: white;
   border-radius: 12px;
   padding: 24px;
   text-align: center;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .company-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .company-card .icon {
@@ -812,7 +820,7 @@ a:focus,
 }
 
 .company-card h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 8px;
 }
 
