@@ -898,12 +898,34 @@ a:focus,
 }
 
 .contact-form::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-  pointer-events: none;
-  border-radius: 8px;
-  z-index: -1;
+  content: none;
+}
+
+.contact-details {
+  color: #000;
+}
+
+.contact-details a {
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  color: var(--crimson-light);
+}
+
+.contact-icon {
+  margin-right: var(--spacing-xs);
+  color: var(--navy);
+}
+
+.contact-socials a {
+  margin-right: var(--spacing-md);
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-socials a:hover {
+  color: var(--crimson-light);
 }
 
