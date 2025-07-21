@@ -851,6 +851,36 @@ a:focus,
   color: #555;
 }
 
+.division-box {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.division-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.division-box .icon {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 12px;
+}
+
+.division-box h2 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.division-box p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
 /* =============================
    RESOURCES PAGE STYLES
 ============================= */
