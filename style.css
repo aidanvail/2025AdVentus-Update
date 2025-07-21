@@ -746,8 +746,8 @@ a:focus,
 
 .about-section-image {
   width: 100%;
-  max-width: 1000px;
-  margin: 2rem auto;
+  max-width: 600px;
+  margin: 6rem auto;
   display: block;
   border-radius: 8px;
 }
