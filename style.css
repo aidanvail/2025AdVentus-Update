@@ -789,6 +789,12 @@ a:focus,
   background-position: center;
   position: relative;
   color: var(--white);
+
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .companies-hero::after {
@@ -891,6 +897,12 @@ a:focus,
   background-position: center;
   position: relative;
   color: #fff;
+
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .resources-hero::after {
