@@ -724,8 +724,13 @@ a:focus,
   background-position: center;
   position: relative;
   color: var(--white);
-}
 
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 .about-hero::after {
   content: '';
   position: absolute;
