@@ -778,35 +778,29 @@ a:focus,
   margin-bottom: 1rem;
 }
 
-.hero-banner {
+.companies-hero {
   background-image: url('assets/images/5.jpg');
   background-size: cover;
   background-position: center;
-  height: 260px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-}
-
-.hero-overlay {
-  background: rgba(0,0,0,0.7);
-  padding: 30px;
-  width: 100%;
-}
-
-.hero-overlay h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  position: relative;
   color: var(--white);
-  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-.hero-overlay p {
-  font-size: 1.1rem;
-  margin: 0;
-  color: var(--white);
+.companies-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  pointer-events: none;
+}
+
+.companies-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.companies-hero h1,
+.companies-hero p {
   text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
