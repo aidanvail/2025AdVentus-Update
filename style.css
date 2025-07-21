@@ -716,12 +716,26 @@ a:focus,
     display: block;
   }
 }
-.about-hero-image {
-  width: 100%;
-  height: auto;
-  margin: 2rem 0;
-  border-radius: 10px;
-  object-fit: cover;
+
+.about-hero {
+  background-image: url('assets/images/23324.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: var(--white);
+}
+
+.about-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.about-hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 .about-section-image {
@@ -771,7 +785,7 @@ a:focus,
 }
 
 .hero-overlay {
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.7);
   padding: 30px;
   width: 100%;
 }
@@ -779,11 +793,13 @@ a:focus,
 .hero-overlay h1 {
   font-size: 2rem;
   margin-bottom: 10px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 .hero-overlay p {
   font-size: 1.1rem;
   margin: 0;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 .companies-section {
