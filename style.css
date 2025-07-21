@@ -773,7 +773,7 @@ a:focus,
 }
 
 .hero-banner {
-  background-image: url('assets/images/15.png');
+  background-image: url('assets/images/resources-bg.jpg');
   background-size: cover;
   background-position: center;
   height: 260px;
@@ -849,7 +849,7 @@ a:focus,
    RESOURCES PAGE STYLES
 ============================= */
 .resources-hero {
-  background-image: url('assets/images/resources-bg.jpg');
+  background-image: url('assets/images/15.png');
   background-size: cover;
   background-position: center;
   position: relative;
