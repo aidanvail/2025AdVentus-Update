@@ -362,6 +362,7 @@ section {
   width: 40px;
   height: 40px;
   margin-bottom: 12px;
+  display: block;
 }
 
 @media (max-width: 768px) {
@@ -715,3 +716,238 @@ a:focus,
     display: block;
   }
 }
+.about-hero-image {
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-section-image {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.difference-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.difference-cards .card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.difference-cards .card:hover {
+  transform: translateY(-6px);
+}
+
+.difference-cards img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+.hero-banner {
+  background-image: url('/assets/images/15.png');
+  background-size: cover;
+  background-position: center;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay {
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  width: 100%;
+}
+
+.hero-overlay h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.companies-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.company-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.company-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.company-card .icon {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 12px;
+}
+
+.company-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.company-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* =============================
+   RESOURCES PAGE STYLES
+============================= */
+.resources-hero {
+  background-image: url('/assets/images/resources-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+}
+
+.resources-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0));
+}
+
+.book-grid {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.book-cover img {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .book-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.resources-light {
+  background-color: #f5f5f5;
+}
+
+.blue-gradient {
+  background: linear-gradient(to right, #f0f9ff, #e0f2ff);
+}
+
+/* =============================
+   CONTACT PAGE STYLES
+============================= */
+.contact-section {
+  background-image: url('/assets/images/contact-banner-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+}
+
+.contact-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+
+.contact-form {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-form::before {
+  content: none;
+}
+
+.contact-details {
+  color: #000;
+}
+
+.contact-details a {
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  color: var(--crimson-light);
+}
+
+.contact-icon {
+  margin-right: var(--spacing-xs);
+  color: var(--navy);
+}
+
+.contact-socials a {
+  margin-right: var(--spacing-md);
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-socials a:hover {
+  color: var(--crimson-light);
+}
+
+.contact-hero {
+  background-image: url('/assets/images/contact-banner-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+}
+
+.contact-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  pointer-events: none;
+}
+
+.contact-info {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 var(--spacing-md);
+}
+
