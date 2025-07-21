@@ -725,7 +725,7 @@ a:focus,
   position: relative;
   color: var(--white);
 
-  min-height: 40vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -892,13 +892,13 @@ a:focus,
    RESOURCES PAGE STYLES
 ============================= */
 .resources-hero {
-  background-image: url('assets/images/20.png');
+  background-image: url('assets/images/20.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
   color: #fff;
 
-  min-height: 30vh;
+  min-height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
