@@ -929,3 +929,25 @@ a:focus,
   color: var(--crimson-light);
 }
 
+.contact-hero {
+  background-image: url('/assets/images/contact-banner-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+}
+
+.contact-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  pointer-events: none;
+}
+
+.contact-info {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 var(--spacing-md);
+}
+
