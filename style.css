@@ -790,7 +790,7 @@ a:focus,
   position: relative;
   color: var(--white);
 
-  min-height: 80vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -898,7 +898,7 @@ a:focus,
   position: relative;
   color: #fff;
 
-  min-height: 80vh;
+  min-height: 600vh;
   display: flex;
   align-items: center;
   justify-content: center;
