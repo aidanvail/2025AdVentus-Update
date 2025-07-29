@@ -8,51 +8,78 @@
   <meta name="author" content="AdVentus Group" />
   <title>AdVentus Group | Simplifying Modern Business</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
   <script src="https://cdn.pagesense.io/js/adventusgroupptyltd/65e48b14e4f1433184406a140312f2dc.js"></script>
 </head>
 
 <body>
-  <header class="hero full-height">
+  <header class="site-header">
     <div class="container">
-      <h1>Your Strategic Digital Solutions Partner</h1>
-      <p>We simplify digital transformation so you can focus on what you do best.</p>
-      <a href="/contact.html" class="cta-btn">Claim Your FREE 30-Minute Consultation</a>
+      <a href="index.html" class="logo"><img src="assets/images/logo.svg" alt="AdVentus Group Logo"></a>
+      <button id="navToggle" class="nav-toggle">&#9776;</button>
+      <nav id="navMenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="companies.html">Companies</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <section class="about-preview section" data-aos="fade-up">
+  <section class="hero full-height">
+    <div class="container">
+      <h1>Your Strategic Digital Solutions Partner</h1>
+      <p>We simplify digital transformation so you can focus on what you do best.</p>
+      <a href="contact.html" class="cta-btn">Claim Your FREE 30-Minute Consultation</a>
+    </div>
+  </section>
+
+  <section class="about-preview section section-alt" data-aos="fade-up">
     <div class="container">
       <h2>We Build Trust. We Work Smart. We Do It In-House.</h2>
       <p>AdVentus Group empowers South African businesses with end-to-end digital solutions—from marketing and automation to design, development, and staffing. Whether you're just starting out or recovering from a bad agency experience, we're the partner you've been searching for.</p>
     </div>
   </section>
 
-  <section class="services-overview" data-aos="fade-up">
+  <section class="services-overview section" data-aos="fade-up">
     <div class="container">
       <h2>What We Do</h2>
       <div class="services-grid">
-        <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+       <div class="service-item" data-aos="fade-up" data-aos-delay="100">
           <h3>Marketing & Content</h3>
           <p>Engage your audience with powerful strategies, content, and campaigns.</p>
         </div>
         <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/icons/icon-webdev.svg" alt="Web development icon" class="service-icon" loading="lazy">
           <h3>Web Development & SEO</h3>
           <p>Build a custom site and boost visibility with smart, scalable SEO.</p>
         </div>
-        <div class="service-item" data-aos="fade-up" data-aos-delay="300">
-          <h3>Branding & Printing</h3>
-          <p>Design a memorable brand and print materials that resonate.</p>
-        </div>
         <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+          <img src="assets/icons/icon-automation.svg" alt="Automation icon" class="service-icon" loading="lazy">
           <h3>Automation & AI</h3>
           <p>Streamline your operations with powerful in-house automation.</p>
         </div>
+        <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/icons/icon-cloud.svg" alt="Cloud services icon" class="service-icon" loading="lazy">
+          <h3>Cloud & Mail Hosting</h3>
+          <p>Reliable website and email hosting backed by secure cloud infrastructure.</p>
+        </div>
+        <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+          <img src="assets/icons/icon-branding.svg" alt="Branding icon" class="service-icon" loading="lazy">
+          <h3>Branding & Printing</h3>
+          <p>Design a memorable brand and print materials that resonate.</p>
+        </div>
         <div class="service-item" data-aos="fade-up" data-aos-delay="500">
+          <img src="assets/icons/icon-ai.svg" alt="AI icon" class="service-icon" loading="lazy">
           <h3>App & Software Dev</h3>
           <p>Turn ideas into digital tools with our full-stack dev team.</p>
         </div>
         <div class="service-item service-box" data-aos="fade-up" data-aos-delay="600">
+          <img src="assets/icons/icon-staffing.svg" alt="Staffing icon" class="service-icon" loading="lazy">
           <h3>Staffing & Support</h3>
           <p>Hire smarter with tailored staffing for your business goals.</p>
         </div>
@@ -60,36 +87,43 @@
     </div>
   </section>
 
-  <section class="cta-section" data-aos="fade-up">
+  <section class="cta-section section" data-aos="fade-up">
     <div class="container">
       <h2>Ready to Simplify Your Business?</h2>
-      <a href="/contact.html" class="cta-btn">Claim Your FREE 30-Minute Consultation</a>
+      <a href="contact.html" class="cta-btn">Claim Your FREE 30-Minute Consultation</a>
     </div>
   </section>
 
   <footer class="site-footer">
     <div class="container">
+      <div class="footer-logo">
+        <img src="assets/images/logo.svg" alt="AdVentus Group Logo" loading="lazy">
+      </div>
       <div class="footer-links">
-        <a href="/">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/companies.html">Companies</a>
-        <a href="/resources.html">Resources</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/privacy.html">Privacy Policy</a>
-        <a href="/terms.html">Terms & Conditions</a>
-        <a href="/disclaimer.html">Disclaimer</a>
-
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="companies.html">Companies</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
       </div>
       <div class="footer-contact">
-        <p>Email: info@adventusgroup.co.za</p>
-        <p>Cell/WhatsApp: +27 82 649 9796 | Landline: +27 87 822 2264</p>
+        <p class="footer-text"><i class="fa-solid fa-envelope footer-icon" aria-hidden="true"></i><a href="mailto:info@adventusgroup.co.za" class="footer-text">info@adventusgroup.co.za</a></p>
+        <p class="footer-text"><i class="fa-solid fa-phone footer-icon" aria-hidden="true"></i><a href="tel:+27826499796" class="footer-text">+27 82 649 9796</a> | <a href="tel:+27878222264" class="footer-text">+27 87 822 2264</a></p>
         <div class="socials">
-          <a href="https://linkedin.com/company/adventus-group-digital-firm/">LinkedIn</a> |
-          <a href="https://www.instagram.com/adventus_group/">Instagram</a> |
-          <a href="https://facebook.com/profile.php?id=61577836894684">Facebook</a> |
-          <a href="https://x.com/AdVentusGroup">X (Twitter)</a>
+          <a href="https://linkedin.com/company/adventus-group-digital-firm/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/adventus_group/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com/profile.php?id=61577836894684" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/AdVentusGroup" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
         </div>
         <p>© 2025 AdVentus Group. All rights reserved.</p>
+        <p class="attribution">A Product of the AdVentus Group. Designed by AdVentus WebTech Solutions.</p>
       </div>
     </div>
   </footer>
