@@ -68,7 +68,7 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--spacing-lg);
+  padding: 0 var(--spacing-xl);
   box-sizing: border-box;
 }
 
@@ -81,16 +81,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: 3rem; }
-h2 { font-size: 2.5rem; }
-h3 { font-size: 2rem; }
-h4 { font-size: 1.75rem; }
-h5 { font-size: 1.5rem; }
-h6 { font-size: 1.25rem; }
+h2 { font-size: 2.25rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1.1rem; }
 
 p {
   margin: 0 0 var(--spacing-md);
   font-size: 1.1rem;
   color: var(--charcoal);
+}
+
+ul {
+  padding-left: var(--spacing-lg);
+  margin: 0 0 var(--spacing-md);
+}
+
+li {
+  margin-bottom: var(--spacing-sm);
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 a {
@@ -106,37 +119,67 @@ a:hover {
 /* =============================
    HEADER & NAVIGATION
 ============================= */
-header {
+.site-header {
   background-color: var(--navy);
   color: var(--white);
-  padding: 20px;
-  text-align: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-header h1 {
-  font-family: var(--font-heading);
-  margin: 0;
-  font-size: 2rem;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
+.site-header .container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md) var(--spacing-xl);
 }
 
-nav a {
-  text-decoration: none;
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
   color: var(--white);
-  font-weight: bold;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 1.75rem;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: var(--spacing-lg);
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+  color: var(--crimson-light);
+}
+
+.nav-menu a.active {
+  color: var(--crimson-light);
+}
+
+.nav-menu {
+  position: relative;
+  max-height: none;
+}
+
+.nav-menu.open {
+  max-height: none;
 }
 
 /* =============================
@@ -237,6 +280,13 @@ nav a:hover {
 /* =============================
    MAIN SECTIONS
 ============================= */
+section {
+  padding: var(--spacing-xl) 0;
+}
+
+section + section {
+  margin-top: var(--spacing-xl);
+}
 /* =============================
    SERVICES SECTION
 ============================= */
@@ -467,6 +517,15 @@ a:focus,
 .footer-contact {
   text-align: center;
   font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-contact p {
+  margin: 0 0 var(--spacing-sm);
+}
+
+.footer-contact p:last-child {
+  margin-bottom: 0;
 }
 
 .site-footer a {
@@ -519,6 +578,10 @@ a:focus,
     padding: 0 var(--spacing-md);
   }
 
+  section {
+    padding: var(--spacing-lg) 0;
+  }
+
   .hero h1 {
     font-size: 2.5rem;
   }
@@ -556,10 +619,30 @@ a:focus,
   .footer-contact {
     margin-top: var(--spacing-lg);
   }
-}
 
-  nav ul {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-normal);
+  }
+
+  .nav-menu ul {
     flex-direction: column;
     align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) 0;
+  }
+
+  .nav-menu.open {
+    max-height: 400px;
   }
 }
