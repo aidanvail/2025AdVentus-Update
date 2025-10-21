@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- Scroll Animations (AOS) ---
   if (window.AOS) {
     AOS.init({
-      duration: 700, // Animation duration in ms
-      once: true,    // Only animate once per element
-      offset: 60,    // Offset (px) from the original trigger point
+      duration: 700,
+      once: true,
+      offset: 60,
       easing: 'ease-out-cubic',
-      mirror: false, // Don't animate out while scrolling past
-      disable: window.innerWidth < 600 // Disable on very small screens for performance
+      mirror: false,
+      disable: window.innerWidth < 600
     });
   }
 
@@ -22,18 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // --- Scroll Animations (AOS) ---
-  if (window.AOS) {
-    AOS.init({
-      duration: 700, // Animation duration in ms
-      once: true,    // Only animate once per element
-      offset: 60,    // Offset (px) from the original trigger point
-      easing: 'ease-out-cubic',
-      mirror: false, // Don't animate out while scrolling past
-      disable: window.innerWidth < 600 // Disable on very small screens for performance
-    });
-  }
-
   // --- Click Tracking for UX/SEO Insight ---
   function logClick(element, label) {
     const time = new Date().toISOString();
@@ -42,16 +30,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Track .cta-btn clicks
   document.querySelectorAll('.cta-btn').forEach(btn => {
-    btn.addEventListener('click', function () {
-      logClick(this, '.cta-btn');
-    });
+    btn.addEventListener('click', () => logClick(btn, '.cta-btn'));
   });
 
   // Track navigation link clicks (footer and nav)
   document.querySelectorAll('nav a, .footer-links a').forEach(link => {
-    link.addEventListener('click', function () {
-      logClick(this, `NavLink: ${this.textContent.trim()}`);
-    });
+    link.addEventListener('click', () =>
+      logClick(link, `NavLink: ${link.textContent.trim()}`)
+    );
   });
 
   // Track contact form submit button
@@ -59,13 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (contactForm) {
     const submitBtn = contactForm.querySelector('button[type="submit"], input[type="submit"]');
     if (submitBtn) {
-      submitBtn.addEventListener('click', function () {
-        logClick(this, 'Contact Form Submit');
-      });
+      submitBtn.addEventListener('click', () => logClick(submitBtn, 'Contact Form Submit'));
     }
   }
 
   // Placeholder for future enhancements
   console.log("AdVentus Group JS loaded.");
 });
-  
