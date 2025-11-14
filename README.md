@@ -118,7 +118,8 @@ style.css – Custom styling based on brand guide.
 
 sitemap.xml and robots.txt – SEO files.
 
-Media assets to be named and added as per the file: media_asset_checklist.csv
+Media assets to be named and added as per the file: media_asset_checklist.csv.
+*Note: Binary images are omitted from this repository. Create an `assets` folder and upload your own images and icons when deploying.*
 
 Tools to Embed (per page):
 
@@ -165,9 +166,9 @@ AdVentus-Website/
 ├── style.css
 ├── sitemap.xml
 ├── robots.txt
-├── assets/
-     ├── images/
-     └── icons/
+├── assets/ *(add your images here)*
+│    ├── images/
+│    └── icons/
 
 
 7. Future Enhancements (Planned or Optional)
